@@ -45,6 +45,9 @@ add_dependencies(daemon version)
 add_dependencies(rpc version)
 add_dependencies(simplewallet version)
 
+define P2P_DEFAULT_PORT 48557
+define RPC_DEFAULT_PORT 48618
+
 set_property(TARGET common crypto cryptonote_core rpc wallet node_rpc_proxy PROPERTY FOLDER "libs")
 set_property(TARGET daemon simplewallet connectivity_tool simpleminer PROPERTY FOLDER "prog")
 #TODO Specify the name of daemon for your currency
