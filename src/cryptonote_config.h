@@ -9,7 +9,7 @@
 #define CRYPTONOTE_MAX_TX_SIZE                          1000000000
 #define CRYPTONOTE_PUBLIC_ADDRESS_TEXTBLOB_VER          0
 //TODO Currency-specific address prefix
-#define CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX        
+#define CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX         0x15f3
 //TODO Choose maturity period for your currency
 #define CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW            
 #define CURRENT_TRANSACTION_VERSION                     1
@@ -58,9 +58,9 @@
 #define CRYPTONOTE_PROTOCOL_HOP_RELAX_COUNT             3      //value of hop, after which we use only announce of new block
 
 //TODO This port will be used by the daemon to establish connections with p2p network
-#define P2P_DEFAULT_PORT           48557                     
+#define P2P_DEFAULT_PORT                                48557
 //TODO This port will be used by the daemon to interact with simlewallet
-#define RPC_DEFAULT_PORT           48618                     
+#define RPC_DEFAULT_PORT                                48618
 #define COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT           1000
 
 #define P2P_LOCAL_WHITE_PEERLIST_LIMIT                  1000
